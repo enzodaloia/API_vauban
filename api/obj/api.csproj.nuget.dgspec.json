@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj": {}
+    "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj": {}
   },
   "projects": {
-    "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj": {
+    "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj",
-        "projectName": "api",
-        "projectPath": "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj",
+        "projectUniqueName": "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj",
+        "projectName": "API",
+        "projectPath": "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj",
         "packagesPath": "/Users/enzo/.nuget/packages/",
         "outputPath": "/Users/enzo/Documents/GitHub/API_vauban/api/obj/",
         "projectStyle": "PackageReference",
@@ -20,6 +20,7 @@
           "net7.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +38,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,6 +60,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
