@@ -4,7 +4,7 @@ namespace API.Models
 	public class Plat
 	{
         public int Id { get; set; }
-        public int IdCondiment { get; set; }
+        public int IdMenu { get; set; }
         public string nom { get; set; }
         public int prix { get; set; }
         public string description { get; set; }

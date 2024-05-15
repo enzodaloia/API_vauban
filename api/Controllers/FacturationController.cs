@@ -8,7 +8,7 @@ using API.Data;
 using API.Models;
 
 namespace API.Controllers
-{
+{ 
     [Route("api/[controller]")]
     [ApiController]
     public class FacturationController : ControllerBase
