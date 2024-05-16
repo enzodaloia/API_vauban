@@ -8,6 +8,7 @@ using API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using BCrypt.Net;
 
 namespace API.Controllers
 {
@@ -43,19 +44,8 @@ namespace API.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            // Generate a salt
-            byte[] salt;
-            new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
-
-            // Choose a number of iterations
-            int iterations = 10000;
-
             // Hash the password
-            using (var pbkdf2 = new Rfc2898DeriveBytes(user.password, salt, iterations))
-            {
-                byte[] hash = pbkdf2.GetBytes(20); // Get a 20-byte hash
-                user.password = Convert.ToBase64String(hash); // Convert the hash to a string for storage
-            }
+            user.password = BCrypt.Net.BCrypt.HashPassword(user.password);
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();

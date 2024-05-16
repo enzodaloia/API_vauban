@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj": {}
+    "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj": {}
   },
   "projects": {
-    "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj": {
+    "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj",
-        "projectName": "API",
-        "projectPath": "/Users/enzo/Documents/GitHub/API_vauban/api/API.csproj",
+        "projectUniqueName": "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj",
+        "projectName": "api",
+        "projectPath": "/Users/enzo/Documents/GitHub/API_vauban/api/api.csproj",
         "packagesPath": "/Users/enzo/.nuget/packages/",
         "outputPath": "/Users/enzo/Documents/GitHub/API_vauban/api/obj/",
         "projectStyle": "PackageReference",
@@ -20,7 +20,7 @@
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.316/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,15 +39,33 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -55,7 +73,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
@@ -77,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
         }
       }
     }

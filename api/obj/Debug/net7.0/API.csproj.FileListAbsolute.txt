@@ -41,3 +41,11 @@
 /Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/System.CodeDom.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/enzo/Documents/GitHub/API_vauban/api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
