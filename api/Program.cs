@@ -71,7 +71,12 @@ app.UseHttpsRedirection();
 app.UseAuthentication(); // Enable authentication middleware
 app.UseAuthorization();
 
-app.UseCors(); // Enable CORS
+app.UseCors(options =>
+{
+    options.WithOrigins("http://localhost:4200")
+           .AllowAnyHeader()
+           .AllowAnyMethod();
+});
 
 app.MapControllers();
 

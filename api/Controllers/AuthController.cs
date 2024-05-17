@@ -23,19 +23,19 @@ namespace API.Controllers
             _context = context;
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] UserLogin userLogin)
+        [HttpGet("login")]
+        public async Task<IActionResult> Login(string email, string password)
         {
             var user = await _context.Users
-                .SingleOrDefaultAsync(u => u.email == userLogin.Email);
+                .SingleOrDefaultAsync(u => u.email == email);
 
-            if (user != null && BCrypt.Net.BCrypt.Verify(userLogin.Password, user.password))
+            if (user != null && BCrypt.Net.BCrypt.Verify(password, user.password))
             {
                 var token = GenerateJwtToken(user.email);
                 return Ok(new { token });
             }
 
-            return Unauthorized();
+            return NotFound();
         }
 
         private string GenerateJwtToken(string email)
