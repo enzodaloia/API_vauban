@@ -8,6 +8,7 @@ namespace API.Models
         public DateTime CheckOutDate { get; set; }
         public int Statut { get; set; }
         public int chambreId { get; set; }
+        public string description { get; set; }
     }
 }
 

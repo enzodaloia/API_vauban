@@ -5,6 +5,7 @@ namespace API.Models
 	{
         public int id { get; set; }
         public int numero { get; set; }
+        public string description { get; set; }
     }
 }
 
